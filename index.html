@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Music Website</title>
+<style>
+    @font-face {
+    font-family: 'spotify';
+    src: url('fonts/GothamMedium.ttf') 
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1DB954; /* Spotify green */
+        color: #fff;
+    }
+
+    header {
+        background-color: #000; /* Black */
+        padding: 8px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .playlist-container {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #000; /* Black */
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe {
+        border-radius: 12px;
+        width: 100%;
+        height: 500px; /* Increased height */
+        border: none;
+    }
+
+    footer {
+        background-color: #000; /* Black */
+        text-align: center;
+        padding: 6px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .playlist-container {
+            border-radius: 0;
+            box-shadow: none;
+        }
+        /* iframe {
+            height: 300px;
+        } */
+	header{
+		font-size : 10px;
+	}   
+    }
+
+    *{
+        font-family: 'spotify';
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Listen best handpicked hindi songs by Sush!! and that too adfree!!!</h1>
+</header>
+
+<main>
+    <div class="playlist-container">
+        <iframe src="https://open.spotify.com/embed/playlist/6YFeEZEhwNwgiLYzRD5hDM?utm_source=generator&theme=0" 
+                frameborder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+        </iframe>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 SushMusic PVT Limited. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
